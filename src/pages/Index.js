@@ -1,7 +1,7 @@
 import Post from '../components/Post';
 import {useLoaderData, Form} from 'react-router-dom';
 
-function Index (props){
+function Index (props) {
 
     const cheeses = useLoaderData()
 
@@ -16,8 +16,7 @@ function Index (props){
         </Form>
     </div>
     {cheeses.map((cheese) => <Post key={cheese.id} post={cheese}/>)}
-    </>
-
+</>
 }
 
 export default Index;
